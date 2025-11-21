@@ -336,13 +336,13 @@ GLOBAL_LIST_INIT(spells, typesof(/obj/effect/proc_holder/spell)) //needed for th
 		switch(charge_type)
 			if("recharge")
 				charge_counter = 0 //doesn't start recharging until the targets selecting ends
-				START_PROCESSING(SSfastprocess, src)
 			if("charges")
 				charge_counter-- //returns the charge if the targets selecting fails
 			if("holdervar")
 				adjust_var(user, holder_var_type, holder_var_amount)
 	if(action)
 		action.UpdateButtonIcon()
+	START_PROCESSING(SSfastprocess, src)
 	record_featured_stat(FEATURED_STATS_MAGES, user)
 	return TRUE
 
@@ -542,6 +542,7 @@ GLOBAL_LIST_INIT(spells, typesof(/obj/effect/proc_holder/spell)) //needed for th
 			charge_counter++
 		if("holdervar")
 			adjust_var(user, holder_var_type, -holder_var_amount)
+	START_PROCESSING(SSfastprocess, src)
 	if(action)
 		action.UpdateButtonIcon()
 
