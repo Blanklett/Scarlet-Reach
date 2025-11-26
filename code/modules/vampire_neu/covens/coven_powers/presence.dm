@@ -120,7 +120,7 @@
 	target.overlays_standing[MUTATIONS_LAYER] = presence_overlay
 	target.apply_overlay(MUTATIONS_LAYER)
 
-	target.Stun(3 SECONDS)
+	target.Immobilize(3 SECONDS)
 	to_chat(target, "<span class='userlove'><b>KNEEL</b></span>")
 	to_chat(target, "<span class='userlove'><b>MY NEW GOD!</b></span>")
 	playsound(target,'sound/villain/wonder_secret_known.ogg', 40)
