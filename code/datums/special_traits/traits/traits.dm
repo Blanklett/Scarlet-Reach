@@ -325,7 +325,7 @@
 /datum/special_trait/backproblems
 	name = "Giant"
 	greet_text = span_notice("I've always been called a giant. I am valued for my stature, but, this world made for smaller folk has forced me to move cautiously.")
-	req_text = "Not a kobold, verminvolk or a dwarf"
+	req_text = "Not a kobold, verminvolk, a dwarf, nor an ogre."
 	restricted_races = list(/datum/species/anthromorphsmall, /datum/species/dwarf/mountain, /datum/species/kobold, /datum/species/ogre)
 	weight = 50
 

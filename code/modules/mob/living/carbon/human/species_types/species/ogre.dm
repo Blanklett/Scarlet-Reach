@@ -10,7 +10,7 @@
 	base_name = "Ogroid"
 	desc = "<b>Ogres</b><br>\
 	Creatures born from the labors of Graggar, Ogres are his favorite children in all creation. Massive in appetite and size they are titans of the battlefield. Maneaters who smash all who oppose their strength and take as they please from the world. Native to the windswept steppes of Gronn, they have migrated across the world in search of food and riches, as conquerors and mercenaries. Not all ogres are Graggarites, and many have converted as they are either simple minded enough to convince to convert, or cunning enough to see the benefit of adopting a new faith in a new land..<br>\
-	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b> +2 STR | +2 CON | | +2 END | -3 INT | -1 SPD</b></span> </br>\
+	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b> +2 STR | +2 CON | | +2 END | -1 SPD</b></span> </br>\
 	<span style='color: #6a8cb7;text-shadow:-1px -1px 0 #000,1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000;'><b> LANGUAGE: Orcish - ,o</b></span> </br>"
 
 	skin_tone_wording = "Region"
@@ -35,8 +35,8 @@
 	OFFSET_NECK = list(0,1), OFFSET_MOUTH = list(0,1), OFFSET_PANTS = list(0,0), \
 	OFFSET_SHIRT = list(0,1), OFFSET_ARMOR = list(0,1), OFFSET_HANDS = list(0,1), OFFSET_UNDIES = list(0,1), \
 	OFFSET_ID_F = list(0,1), OFFSET_GLOVES_F = list(0,1), OFFSET_WRISTS_F = list(0,1), OFFSET_HANDS_F = list(0,1), \
-	OFFSET_CLOAK_F = list(0,1), OFFSET_FACEMASK_F = list(0,1), OFFSET_HEAD_F = list(0,1), \
-	OFFSET_FACE_F = list(0,1), OFFSET_BELT_F = list(0,1), OFFSET_BACK_F = list(0,1), \
+	OFFSET_CLOAK_F = list(0,1), OFFSET_FACEMASK_F = list(0,6), OFFSET_HEAD_F = list(0,1), \
+	OFFSET_FACE_F = list(0,6), OFFSET_BELT_F = list(0,1), OFFSET_BACK_F = list(0,1), \
 	OFFSET_NECK_F = list(0,1), OFFSET_MOUTH_F = list(0,1), OFFSET_PANTS_F = list(0,1), \
 	OFFSET_SHIRT_F = list(0,1), OFFSET_ARMOR_F = list(0,1), OFFSET_UNDIES_F = list(0,1))
 	race_bonus = list(STAT_STRENGTH = 2, STAT_CONSTITUTION = 2, STAT_ENDURANCE = 1, STAT_INTELLIGENCE = -3, STAT_SPEED = -1)
