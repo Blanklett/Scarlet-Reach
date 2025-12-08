@@ -488,7 +488,7 @@
 	item_state = "elfdag"
 	var/extended = 0
 	wdefense = 2
-	max_integrity = 150
+	max_integrity = 200
 	sellprice = 30 //shiny :o
 
 	picklvl = 0
