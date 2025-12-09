@@ -1,7 +1,7 @@
 /datum/advclass/ogre/avatar
 	name = "Avatar of Graggar" 
 	tutorial = "A foul stench of death spreads from the bog across the entire land, none can escape it. For the Avatar of Graggar arises from the muck to devour in the name of his father. Prepare now!"
-	allowed_sexes = list(MALE) // sorry ladies
+	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = /datum/species/ogre
 	outfit = /datum/outfit/job/roguetown/ogre/avatar
 	category_tags = list(CTAG_OGRE)

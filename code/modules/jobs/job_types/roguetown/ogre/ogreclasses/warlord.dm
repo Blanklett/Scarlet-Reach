@@ -1,7 +1,7 @@
 /datum/advclass/ogre/warlord
 	name = "Warlord" 
 	tutorial = "A great war horn sounds from the bog land, the call of war from a monster of noble blood."
-	allowed_sexes = list(MALE) // sorry ladies
+	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = /datum/species/ogre
 	outfit = /datum/outfit/job/roguetown/ogre/warlord
 	category_tags = list(CTAG_OGRE)
