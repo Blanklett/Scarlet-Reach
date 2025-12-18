@@ -97,7 +97,7 @@
 				rank_color = "ECB20A"
 			if(SOCIAL_RANK_ROYAL)
 				rank_color = "FFBF00"
-    	var/strata_icon = family_datum ? "⛯" : "⚜"
+		var/strata_icon = family_datum ? "⛯" : "⚜"
 		var/social_strata = SPAN_TOOLTIP_DANGEROUS_HTML(generate_strata(user), "<font color='#[rank_color]'>[strata_icon]</font></A>")
 		var/display1
 		var/display2 = "[!HAS_TRAIT(usr, TRAIT_OUTLANDER) ? "[social_strata]" : " "]"
@@ -1103,16 +1103,17 @@
 			output = "This person is <EM>[rank_name]</EM>, they are my equal."
 		if(social_rank < examiner_rank)
 			output = "This person is <EM>[rank_name]</EM>, they are my lesser."
-    if(family_datum)
-      var/datum/family_member/FM = family_datum.GetMemberForPerson(src)
-      var/spousetext = ""
-      if(FM && FM.spouses.len)
-        var/list/spouse_list = list()
-        for(var/datum/family_member/S in FM.spouses)
-          if(S.person)
-            spouse_list += S.person.real_name
-        if(spouse_list.len)
-          spousetext = jointext(spouse_list, ", ")
-      output += " They are a member of house [family_datum.housename].[spousetext ? " Married to [spousetext]." : ""]"
+	if(family_datum)
+		var/datum/family_member/FM = family_datum.GetMemberForPerson(src)
+		var/spousetext = ""
+		if(FM && FM.spouses.len)
+			var/list/spouse_list = list()
+			for(var/datum/family_member/S in FM.spouses)
+				if(S.person)
+					var/mob/living/carbon/human/the_person = S.person
+					spouse_list += the_person.real_name
+			if(spouse_list.len)
+				spousetext = jointext(spouse_list, ", ")
+		output += " They are a member of house [family_datum.housename][spousetext ? ", and are married to [spousetext]." : "."]"
 		
 	return output
