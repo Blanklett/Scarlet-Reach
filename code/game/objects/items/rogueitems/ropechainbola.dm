@@ -244,7 +244,7 @@
 /obj/item/net/throw_at(atom/target, range, speed, mob/thrower, spin=1, diagonals_first = 0, datum/callback/callback)
 	if(!..())
 		return
-	playsound(src.loc,'sound/blank.ogg', 75, TRUE)
+	playsound(src.loc,'sound/items/bolathrow.ogg', 75, TRUE)
 
 /obj/item/net/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	if(..() || !iscarbon(hit_atom))//if it gets caught or the target can't be cuffed,
@@ -264,7 +264,7 @@
 		to_chat(C, "<span class='danger'>\The [src] entraps you!</span>")
 		C.Knockdown(knockdown)
 		C.apply_status_effect(/datum/status_effect/debuff/netted)
-		playsound(src, 'sound/blank.ogg', 50, TRUE)
+		playsound(src, 'sound/items/snap.ogg', 50, TRUE)
 
 // Failsafe in case the item somehow ends up being destroyed
 /obj/item/net/Destroy()
