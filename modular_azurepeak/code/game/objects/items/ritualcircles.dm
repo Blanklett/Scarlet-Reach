@@ -267,6 +267,17 @@
 
 	L.visible_message(span_warning(message))
 
+	// Random clown laughter sound
+	var/list/sounds = list(
+		'sound/misc/clownedsitcomlaugh1.ogg',
+		'sound/misc/clownedsitcomlaugh2.ogg',
+		'sound/misc/clownedsitcomlaugh3.ogg',
+		'sound/misc/clownedhohoho.ogg',
+		'sound/misc/clownedhehe.ogg'
+	)
+
+	playsound(L, pick(sounds), 50, TRUE)
+
 	L.AdjustKnockdown(2)
 	
 /obj/structure/ritualcircle/ravox
