@@ -481,6 +481,7 @@
 	wdefense = 6
 	pickup_sound = 'modular_helmsguard/sound/sheath_sounds/draw_greatsword.ogg'
 	sheathe_sound = 'modular_helmsguard/sound/sheath_sounds/put_back_to_leather.ogg'
+	special = /datum/special_intent/axe_swing
 
 /obj/item/rogueweapon/greataxe/equipped(mob/user, slot, initial = FALSE)
 	pickup_sound = pick("modular_helmsguard/sound/sheath_sounds/draw_polearm.ogg", "modular_helmsguard/sound/sheath_sounds/draw_greatsword.ogg", "modular_helmsguard/sound/sheath_sounds/draw_spear.ogg")
